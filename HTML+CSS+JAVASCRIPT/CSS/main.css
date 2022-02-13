@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:320px){
+    .jl-page-wrapper{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background: #1c1c1c;
+        border: 10px solid #000;
+        /*border: 30px solid #000;*/
+    }
+
+    .jl-topbar{
+        width: 100%;
+        height: 80px;
+        /*height: 110px;*/
+        display: flex;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .jl-logo{
+     /* width: 74px;*/
+      width: 50px;
+      height: 100%;
+      margin-left: 20px;
+      background-color: #2ccb69;
+      border-radius: 0 0 24px 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .jl-logo img{
+        margin-top: 20px;
+        width: 30px;
+    }
+
+    .jl-menu{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .jl-menu a{
+        font-family: 'Open Sans';
+        font-size: 16px;
+        color: #bcbcbc;
+        text-decoration: none;
+        font-weight: 400;
+        position: relative;
+
+    }
+
+    .jl-menu a:hover{
+       color: #2ccb69;
+    }
+
+   /*linha com before*/
+    .jl-menu a::before{
+        content:'';
+        width: 0;
+        height: 4px;
+        background-color: #2ccb69;
+        position: absolute;
+        display: block;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.3s ease-out;
+     }
+
+     .jl-menu a:hover::before{
+        width: 100%;
+     }
+}
+
+@media screen and (min-width:576px){
+    
+}
+
+@media screen and (min-width:768px){
+    
+}
+
+@media screen and (min-width:992px){
+    
+}
+
+@media screen and (min-width:1200px){
+    
+}
+
