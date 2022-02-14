@@ -95,10 +95,6 @@
     transition: all 0.2s ease-out;
   }
 
-  .jl-btn-contact:hover {
-    background-position-y: -45px;
-  }
-
   .jl-contact-info {
     width: 170px;
     height: 120px;
@@ -139,6 +135,10 @@
   }
 }
 
+.jl-container-info{
+    display: none;
+}
+
 @media screen and (min-width: 576px) {
 }
 
@@ -169,6 +169,7 @@
   .jl-contact-info {
     width: 210px;
     height: 140px;
+    padding-left: 20px;
     bottom: 94px;
     right: 45px; 
   }
@@ -224,6 +225,7 @@
     width: 245px;
     height: 165px;
     bottom: 115px;
+    padding-left: 25px;
     right: 70px;
   }
 
@@ -241,7 +243,7 @@
 @media screen and (min-width: 1200px) {
 }
 
-/*  classes utilitaries */
+/*classes utilitaries */
 .jl-title {
   font-family: "Abril Farface", serif;
   font-weight: 400;
@@ -290,3 +292,13 @@
 .jl-margin-30 {
   margin-bottom: 30px;
 }
+
+
+/*javascript function*/
+.jl-is-open{
+    display: block;
+}
+
+.jl-change-icon {
+    background-position-y: -45px;
+  }
