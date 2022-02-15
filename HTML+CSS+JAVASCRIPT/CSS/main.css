@@ -16,7 +16,7 @@
   .jl-preloader {
     width: 100%;
     height: 100vh;
-    display: block;
+    display: table;
     background: #1c1c1c;
     border: 10px solid #000;
   }
@@ -127,8 +127,8 @@
   }
 
   .jl-contact-info {
-    width: 170px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,6 +166,33 @@
 
 .jl-container-info {
   display: none;
+}
+
+/*---HOME---*/
+
+.row{
+  height: calc(100vh - 70px);
+}
+
+.jl-first-height{
+  height: calc(100vh - 10px);
+}
+
+.jl-title-apresentation{
+   font-size: 35px;
+}
+
+.jl-description{
+  width: 45%;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.jl-apresentation{
+  background-image: url('../Image/joao-lemon-designer-home.png');
+  background-size: 70% 90%;
+  background-repeat: no-repeat;
+  background-position: 75% bottom;
 }
 
 @media screen and (min-width: 576px) {
@@ -350,6 +377,12 @@
 .jl-mar-top-30 {
   margin-top: 30px;
 }
+
+.jl-full-height{
+  height: 100vh;
+
+}
+
 
 /*javascript function*/
 .jl-is-open {
