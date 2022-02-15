@@ -6,162 +6,160 @@
 
 /*preloader*/
 @keyframes fadeOut {
-    to{
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
-@media screen and (min-width: 320px) {
-  .jl-page-wrapper,
-  .jl-preloader {
-    width: 100%;
-    height: 100vh;
-    display: table;
-    background: #1c1c1c;
-    border: 10px solid #000;
-  }
+.jl-page-wrapper,
+.jl-preloader {
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #1c1c1c;
+  border: 10px solid #000;
+}
 
-  .jl-preloader {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    position: fixed;
-  }
+.jl-preloader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+}
 
-  .jl-preloader img {
-    width: 70%;
-    height: auto;
-  }
+.jl-preloader img {
+  width: 70%;
+  height: auto;
+}
 
-  .jl-preloader p {
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-  }
+.jl-preloader p {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
 
-  .jl-topbar {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
+.jl-topbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-  .jl-logo {
-    width: 50px;
-    height: 100%;
-    margin-left: 20px;
-    background-color: #2ccb69;
-    border-radius: 0 0 24px 0;
-    display: flex;
-    justify-content: center;
-  }
+.jl-logo {
+  width: 50px;
+  height: 100%;
+  margin-left: 20px;
+  background-color: #2ccb69;
+  border-radius: 0 0 24px 0;
+  display: flex;
+  justify-content: center;
+}
 
-  .jl-logo img {
-    margin-top: 20px;
-    width: 30px;
-  }
+.jl-logo img {
+  margin-top: 20px;
+  width: 30px;
+}
 
-  .jl-menu {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+.jl-menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .jl-menu a {
-    font-family: "Open Sans";
-    font-size: 16px;
-    color: #bcbcbc;
-    text-decoration: none;
-    font-weight: 400;
-    position: relative;
-  }
+.jl-menu a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #bcbcbc;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+}
 
-  .jl-menu a:hover {
-    color: #2ccb69;
-  }
+.jl-menu a:hover {
+  color: #2ccb69;
+}
 
-  /*linha com before*/
-  .jl-menu a::before {
-    content: "";
-    width: 0;
-    height: 4px;
-    background-color: #2ccb69;
-    position: absolute;
-    display: block;
-    bottom: -6px;
-    left: 0;
-    transition: all 0.3s ease-out;
-  }
+/*linha com before*/
+.jl-menu a::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #2ccb69;
+  position: absolute;
+  display: block;
+  bottom: -6px;
+  left: 0;
+  transition: all 0.3s ease-out;
+}
 
-  .jl-menu a:hover::before {
-    width: 100%;
-  }
+.jl-menu a:hover::before {
+  width: 100%;
+}
 
-  .jl-menu a:active {
-    color: #2ccb69;
-  }
+.jl-menu a:active {
+  color: #2ccb69;
+}
 
-  .jl-btn-contact {
-    width: 45px;
-    height: 45px;
-    display: block;
-    background: #2ccb69;
-    background-image: url("../Image/icon-contact-close.svg");
-    background-repeat: no-repeat;
-    position: fixed;
-    bottom: 20px;
-    right: 14px;
-    border-radius: 50%;
-    z-index: 200;
-    transition: all 0.2s ease-out;
-    border: none;
-    cursor: pointer;
-  }
+.jl-btn-contact {
+  width: 45px;
+  height: 45px;
+  display: block;
+  background: #2ccb69;
+  background-image: url("../Image/icon-contact-close.svg");
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  border-radius: 50%;
+  z-index: 200;
+  transition: all 0.2s ease-out;
+  border: none;
+  cursor: pointer;
+}
 
-  .jl-contact-info {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    padding-left: 10px;
-    position: fixed;
-    bottom: 90px;
-    right: 35px;
-    border-radius: 5px 5px 0 5px;
-  }
+.jl-contact-info {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  align-items: flex-start;
+  padding-left: 10px;
+  position: fixed;
+  bottom: 90px;
+  right: 45px;
+  border-radius: 5px 5px 0 5px;
+}
 
-  .jl-contact-info p:first-child {
-    margin-bottom: 3px;
-  }
+.jl-contact-info p:first-child {
+  margin-bottom: 3px;
+}
 
-  .jl-contact-info div {
-    width: 90%;
-    height: 30%;
-  }
+.jl-contact-info div {
+  width: 90%;
+  height: 30%;
+}
 
-  .jl-contact-info .jl-links {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.jl-contact-info .jl-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .image-corner {
-    position: absolute;
-    bottom: 66px;
-    right: 35px;
-  }
+.image-corner {
+  position: absolute;
+  bottom: 66px;
+  right: 45px;
 }
 
 .jl-container-info {
@@ -169,30 +167,35 @@
 }
 
 /*---HOME---*/
-
-.row{
-  height: calc(100vh - 70px);
-}
-
-.jl-first-height{
+.jl-first-height {
   height: calc(100vh - 10px);
 }
 
-.jl-title-apresentation{
-   font-size: 35px;
-}
-
-.jl-description{
-  width: 45%;
-  font-size: 13px;
-  text-align: justify;
-}
-
-.jl-apresentation{
-  background-image: url('../Image/joao-lemon-designer-home.png');
-  background-size: 70% 90%;
+.jl-apresentation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../Image/joao-lemon-designer-home.png");
   background-repeat: no-repeat;
-  background-position: 75% bottom;
+  background-size: 50% 80%;
+  background-position: 70% bottom;
+}
+
+.jl-title-apresentation {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.jl-description-info {
+  width: 53%;
+  height: 50%;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.info-none {
+  display: none;
 }
 
 @media screen and (min-width: 576px) {
@@ -203,6 +206,28 @@
   .jl-preloader p {
     width: 90%;
     font-size: 20px;
+  }
+
+  /*--- Home ---*/
+  .jl-apresentation {
+    background-size: 50% 85%;
+    background-position: 60% bottom;
+  }
+
+  .jl-title-apresentation {
+    font-size: 70px;
+
+  }
+
+  .jl-description-info {
+    width: 50%;
+    height: 60%;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+
+  .info-none {
+    display: unset;
   }
 }
 
@@ -234,16 +259,16 @@
   }
 
   .jl-btn-contact {
-    bottom: 25px;
-    right: 25px;
+    bottom: 15px;
+    right: 45px;
   }
 
   .jl-contact-info {
     width: 210px;
     height: 140px;
     padding-left: 20px;
-    bottom: 94px;
-    right: 45px;
+    bottom: 84px;
+    right: 65px;
   }
 
   .jl-contact-info p:first-child {
@@ -256,8 +281,25 @@
   }
 
   .image-corner {
-    bottom: 70px;
-    right: 45px;
+    bottom: 60px;
+    right: 65px;
+  }
+
+  /*-- Home --*/
+  .jl-apresentation {
+    background-size: 50% 80%;
+    background-position: 60% bottom;
+  }
+
+  .jl-title-apresentation {
+    font-size: 90px;
+  }
+
+  .jl-description-info {
+    width: 50%;
+    height: 60%;
+    padding-left: 40px;
+    font-size: 20px;
   }
 }
 
@@ -296,16 +338,16 @@
   .jl-btn-contact {
     width: 45px;
     height: 45px;
-    bottom: 45px;
-    right: 45px;
+    bottom: 15px;
+    right: 55px;
   }
 
   .jl-contact-info {
     width: 245px;
     height: 165px;
-    bottom: 115px;
+    bottom: 84px;
     padding-left: 25px;
-    right: 70px;
+    right: 76px;
   }
 
   .jl-contact-info .jl-links {
@@ -313,19 +355,61 @@
   }
 
   .image-corner {
-    bottom: 91px;
-    right: 70px;
+    bottom: 60px;
+    right: 76px;
+  }
+
+  .jl-first-height {
+    height: calc(100vh - 30px);
+  }
+
+  /*---HOME---*/
+  .jl-first-height {
+    height: calc(100vh - 30px);
+  }
+
+  .jl-apresentation {
+    background-size: 50% 80%;
+    background-position: 60% bottom;
+  }
+
+  .jl-title-apresentation {
+    font-size: 105px;
+  }
+
+  .jl-description-info {
+    width: 50%;
+    height: 65%;
+    padding-left: 80px;
+   
   }
 }
 
 @media screen and (min-width: 1200px) {
-    .jl-preloader img {
-        width: 20%;
-      }
-    
-      .jl-preloader p {
-        font-size: 26px;
-      }
+  .jl-preloader img {
+    width: 20%;
+  }
+
+  .jl-preloader p {
+    font-size: 26px;
+  }
+
+  /*---HOME---*/
+  .jl-apresentation {
+    background-size: 50% 80%;
+    background-position: 50% bottom;
+  }
+
+  .jl-title-apresentation {
+    font-size: 120px;
+  }
+
+  .jl-description-info {
+    width: 45%;
+    height: 70%;
+    padding-left: 120px;
+  
+  }
 }
 
 /*classes utilitaries */
@@ -378,11 +462,9 @@
   margin-top: 30px;
 }
 
-.jl-full-height{
+.jl-full-height {
   height: 100vh;
-
 }
-
 
 /*javascript function*/
 .jl-is-open {
@@ -393,6 +475,6 @@
   background-position-y: -45px;
 }
 
-.jl-fade-out{
-    animation:fadeOut 2s forwards ease-out;
+.jl-fade-out {
+  animation: fadeOut 2s forwards ease-out;
 }
